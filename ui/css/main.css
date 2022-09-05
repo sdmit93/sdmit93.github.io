@@ -142,6 +142,7 @@ body {
 .headline {
     grid-area: headline;
     margin-bottom: 1%;
+    position: relative;
 }
 
 .headline__img {
@@ -149,6 +150,51 @@ body {
     width: 100%;
     max-height: 355px;
 }
+
+
+
+.headline__txt-bg {
+    position: absolute;
+    padding-bottom: 0px;
+    height: 80px;
+    opacity: 0.5;
+    filter: alpha(opacity=50);
+    bottom: 30px;
+    right: 520px;
+    left: 30px;
+    background: #444;
+    border: 1px solid #aaa;
+}
+
+.fp-content {
+    position: absolute;
+    height: 70px;
+    padding: 5px 20px;
+    bottom: 30px;
+    right: 520px;
+    left: 30px;
+    overflow: hidden;
+}
+
+.fp-content a, .fp-content p {
+    color: #fff;
+}
+
+.fp-content p {
+    padding-bottom: 10px;
+    margin: 0px;
+}
+
+.fp-content-fon, .fp-content {
+
+    left: 0;
+    right: 0;
+    top: 285px;
+    text-align: left;
+    font-size: 13px;
+}
+
+
 
 .content {
     grid-area: content;
