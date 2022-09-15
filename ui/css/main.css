@@ -246,6 +246,53 @@ body {
     margin: 10px;
 }
 
+
+.simple-table {
+    border-collapse: collapse;
+    width: 300px;
+    margin: 15px 0;
+}
+
+.simple-table td, .simple-table th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+
+.temperature {
+    margin: 15px 0;
+}
+
+.temperature table {
+    border: 1px solid #2d98de;
+    border-collapse: collapse;
+    font-size: 13px;
+}
+
+.temperature td, .temperature th {
+    border: 1px solid #2d98de;
+    text-align: left;
+    padding: 8px;
+}
+
+.temperature th {
+    background-color: #2d98de;
+    color: #fff;
+    font-weight: normal;
+    font-size: 14px;
+}
+
+.temperature__warm {
+    background-color: #ff5300;
+    color: #fff;
+}
+
+.temperature__cold {
+    background-color: #2d98de;
+    color: #fff;
+}
+
 .sidebar {
     grid-area: sidebar;
     background-color: #fff;
