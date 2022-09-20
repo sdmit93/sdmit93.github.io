@@ -8,13 +8,25 @@
             font-family: arial, sans-serif;
         }
 
-        table {
+        .table-one {
             border-collapse: collapse;
             width: 300px;
             margin: 0 auto;
         }
 
-        td, th {
+        .table-one td, .table-one th {
+            border: 1px solid #dddddd;
+            text-align: left;
+            padding: 8px;
+        }
+
+        .table-two {
+            border-collapse: collapse;
+            width: 600px;
+            margin: 0 auto;
+        }
+
+        .table-two td, .table-two th {
             border: 1px solid #dddddd;
             text-align: left;
             padding: 8px;
@@ -23,9 +35,30 @@
     </style>
 </head>
 <body>
-    <table>
+    <table class="table-one">
+        <th>
+            <td>h 1</td>
+            <td>h 2</td>
+            <td>h 3</td>
+            <td>h 4</td>
+        </th>
         <tr>
-            <td>item 1</td>
+            <td>A</td>
+            <td>B</td>
+            <td>C</td>
+            <td>D</td>
+        </tr>
+        <tr>
+            <td>-</td>
+            <td>,</td>
+            <td>!</td>
+            <td>*</td>
+        </tr>
+    </table>
+
+    <table class="table-two">
+        <tr>
+            <td>1</td>
             <td>2</td>
             <td>3</td>
             <td>4</td>
@@ -43,5 +76,6 @@
             <td>*</td>
         </tr>
     </table>
+
 </body>
 </html>

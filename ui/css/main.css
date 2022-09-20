@@ -79,7 +79,7 @@ body {
 
 .header::before {
     content: '';
-    opacity: 0.3;
+    opacity: 0.4;
     background-color: #000;
     display: block;
     position: absolute;
@@ -175,43 +175,6 @@ body {
     background: #4095cd;
 }
 
-.headline {
-    grid-area: headline;
-    position: relative;
-}
-
-.headline__img {
-    display: block;
-    width: 100%;
-    max-height: 355px;
-}
-
-
-.headline__txt-bg {
-    position: absolute;
-    padding-bottom: 0px;
-    height: 80px;
-    opacity: 0.5;
-    filter: alpha(opacity=50);
-    bottom: 30px;
-    right: 520px;
-    left: 30px;
-    background: #444;
-    border: 1px solid #aaa;
-}
-
-.headline__title {
-    position: absolute;
-    left: 20px;
-    bottom: 0;
-    color: #fff;
-    font-size: 22px;
-    font-family: Raleway;
-}
-
-.headline__desc {
-
-}
 
 .fp-content {
     position: absolute;
@@ -240,8 +203,6 @@ body {
     text-align: left;
     font-size: 13px;
 }
-
-
 
 .content {
     grid-area: content;
@@ -294,7 +255,6 @@ body {
     margin: 10px;
 }
 
-
 .simple-table {
     border-collapse: collapse;
     width: 300px;
@@ -307,7 +267,6 @@ body {
     padding: 8px;
 }
 
-
 .temperature {
     margin: 15px 0;
 }
@@ -315,7 +274,6 @@ body {
 .temperature table {
     border: 1px solid #2d98de;
     border-collapse: collapse;
-    font-size: 13px;
 }
 
 .temperature td, .temperature th {
@@ -362,7 +320,6 @@ body {
 .widget__content {
     margin-top: 20px;
 }
-
 
 .popular {
     display: flex;
