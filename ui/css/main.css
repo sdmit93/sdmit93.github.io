@@ -334,12 +334,16 @@ body {
     grid-area: sidebar;
     background-color: #fff;
     padding-left: 4%;
-    overflow:hidden;
     padding-top: 20px;
 }
 
+.sidebar__sticky {
+    position: sticky;
+    top: 20px;
+    margin-top: 20px;
+}
+
 .widget_first {
-    margin-bottom: 20px;
 }
 
 .widget__title {
