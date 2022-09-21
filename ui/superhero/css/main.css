@@ -427,10 +427,11 @@ body {
 
 .footer {
     grid-area: footer;
-    background: #2d98de;
+    background: #0d4981;
     border: none;
     color: #fff;
     text-align: center;
     padding: 2px 0;
-    font-size: 14px;
+    font-size: 16px;
+    padding: 50px 0;
 }
