@@ -2,63 +2,23 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Test table</title>
-    <style>
-        body {
-            font-family: arial, sans-serif;
-        }
-
-        .table-one {
-            border-collapse: collapse;
-            width: 300px;
-            margin: 0 auto;
-        }
-
-        .table-one td, .table-one th {
-            border: 1px solid #dddddd;
-            text-align: left;
-            padding: 8px;
-        }
-
-        .table-two {
-            border-collapse: collapse;
-            width: 600px;
-            margin: 0 auto;
-        }
-
-        .table-two td, .table-two th {
-            border: 1px solid #dddddd;
-            text-align: left;
-            padding: 8px;
-        }
-</style>
-    </style>
+    <title>Test page</title>
+    <link rel="stylesheet" type="text/css" href="ui/css/main.css?v=5">
 </head>
 <body>
-    <table class="table-one">
-        <th>
-            <td>h 1</td>
-            <td>h 2</td>
-            <td>h 3</td>
-            <td>h 4</td>
-        </th>
-        <tr>
-            <td>A</td>
-            <td>B</td>
-            <td>C</td>
-            <td>D</td>
-        </tr>
-        <tr>
-            <td>-</td>
-            <td>,</td>
-            <td>!</td>
-            <td>*</td>
-        </tr>
-    </table>
 
-    <table class="table-two">
+
+    <h2>Places</h2>
+
+    <ul>
+        <li><a target="_blank" href="#murmansk">Murmansk</a></li>
+        <li><a target="_blank" href="#teriberka">Teriberka</a></li>
+    </ul>
+
+    <h2>Simple table</h2>
+    <table class="simple-table">
         <tr>
-            <td>1</td>
+            <td>item 1</td>
             <td>2</td>
             <td>3</td>
             <td>4</td>
@@ -77,5 +37,211 @@
         </tr>
     </table>
 
+    <h2>Climate</h2>
+    <div class="temperature">
+        <table>
+            <tbody>
+              <tr>
+                <th colspan="14">
+                    Climate data for Murmansk (1991–2020, extremes 1918–present)
+                </th>
+              </tr>
+              <tr>
+                <th>Month</th>
+                <th>Jan</th>
+                <th>Feb</th>
+                <th>Mar</th>
+                <th>Apr</th>
+                <th>May</th>
+                <th>Jun</th>
+                <th>Jul</th>
+                <th>Aug</th>
+                <th>Sep</th>
+                <th>Oct</th>
+                <th>Nov</th>
+                <th>Dec</th>
+              </tr>
+              <tr>
+                <th>Record high</th>
+                <td>7.0</td>
+                <td>6.6</td>
+                <td>9.0</td>
+                <td>17.6</td>
+                <td class="temperature__warm">29.4</td>
+                <td class="temperature__warm">30.8</td>
+                <td class="temperature__warm">32.9</td>
+                <td class="temperature__warm">30.2</td>
+                <td>24.2</td>
+                <td>15.0</td>
+                <td>9.6</td>
+                <td>7.2</td>
+              </tr>
+              <tr>
+                <th>Average high</th>
+                <td>−6.5</td>
+                <td>−6.4</td>
+                <td>−1.9</td>
+                <td>2.9</td>
+                <td>8.4</td>
+                <td>13.8</td>
+                <td>17.7 </td>
+                <td>15.3</td>
+                <td>10.7</td>
+                <td>3.6</td>
+                <td>−1.8</td>
+                <td>−4.1</td>
+              </tr>
+              <tr>
+                <th>Daily mean</th>
+                <td>−9.6</td>
+                <td>−9.3</td>
+                <td>−5.1</td>
+                <td>−0.3</td>
+                <td>4.6</td>
+                <td>9.4</td>
+                <td>13.2</td>
+                <td>11.5</td>
+                <td>7.6</td>
+                <td>1.6</td>
+                <td>−4.0</td>
+                <td>−6.8</td>
+              </tr>
+              <tr>
+                <th>Average low</th>
+                <td>−12.7</td>
+                <td>−12.3</td>
+                <td>−8.2</td>
+                <td>−3.3</td>
+                <td>1.5</td>
+                <td>5.9</td>
+                <td>9.6</td>
+                <td>8.3</td>
+                <td>5.1</td>
+                <td>−0.3</td>
+                <td>−6.2</td>
+                <td>−9.6</td>
+              </tr>
+              <tr>
+                <th>Record low</th>
+                <td class="temperature__cold">−39.4</td>
+                <td class="temperature__cold">−38.6</td>
+                <td class="temperature__cold">−32.6</td>
+                <td>−24.0</td>
+                <td>−10.3</td>
+                <td>−2.8</td>
+                <td>1.7</td>
+                <td>−2.0</td>
+                <td>−10.1</td>
+                <td>−21.2</td>
+                <td class="temperature__cold">−32.2</td>
+                <td class="temperature__cold">−34.9</td>
+              </tr>
+              <tr>
+                <th>
+                  Average precipitation mm
+                </th>
+                <td>34</td>
+                <td>24</td>
+                <td>29</td>
+                <td>29</td>
+                <td>37</td>
+                <td>56</td>
+                <td>66</td>
+                <td>71</td>
+                <td>54</td>
+                <td>56</td>
+                <td>36</td>
+                <td>37</td>
+              </tr>
+              <tr>
+                <th>Average extreme snow depth cm</th>
+                <td>26</td>
+                <td>28</td>
+                <td>30</td>
+                <td>19</td>
+                <td>2</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0</td>
+                <td>3</td>
+                <td>11</td>
+                <td>19</td>
+              </tr>
+              <tr>
+                <th>Average rainy days</th>
+                <td>2</td>
+                <td>2</td>
+                <td>3</td>
+                <td>9</td>
+                <td>18</td>
+                <td>22</td>
+                <td>22</td>
+                <td>22</td>
+                <td>24</td>
+                <td>17</td>
+                <td>5</td>
+                <td>3</td>
+              </tr>
+              <tr>
+                <th>Average snowy days</th>
+                <td>27</td>
+                <td>26</td>
+                <td>24</td>
+                <td>19</td>
+                <td>14</td>
+                <td>4</td>
+                <td>0.03</td>
+                <td>0.1</td>
+                <td>2</td>
+                <td>16</td>
+                <td>24</td>
+                <td>27</td>
+              </tr>
+              <tr>
+                <th>
+                  Average relative humidity (%)
+                </th>
+                <td>84</td>
+                <td>83</td>
+                <td>79</td>
+                <td>73</td>
+                <td>72</td>
+                <td>70</td>
+                <td>75</td>
+                <td>79</td>
+                <td>80</td>
+                <td>83</td>
+                <td>86</td>
+                <td>85</td>
+              </tr>
+              <tr>
+                <td colspan="14">
+                  Source 1: Pogoda.ru.net
+                </td>
+              </tr>
+              <tr>
+                <td colspan="14">
+                  Source 2: NOAA (sun, 1961–1990)
+                </td>
+              </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div class="content__list">
+        <ol>
+            <li>
+                <a id="murmansk"></a>
+                Murmansk (Russian: Му́рманск, IPA: [ˈmurmənsk]) is a port city and the administrative center of Murmansk Oblast in the far northwest part of Russia. It sits on both slopes and banks of a modest ria or fjord, Kola Bay, an estuarine inlet of the Barents Sea. Its bulk is on the east bank of the inlet. It is in the north of the rounded Kola Peninsula which covers most of the oblast. The city is 108 kilometres (67 mi) from the border with Norway and 182 kilometres (113 mi) from the Finnish border. The city is named for the Murman Coast, which is in turn derived from an archaic term in Russian for "Norwegian".
+                <a target="_blank" href="https://en.wikipedia.org/wiki/Murmansk">More...</a>
+            </li>
+            <li>
+                <a id="teriberka"></a>
+                Teriberka (Russian: Териберка) is a rural locality (a selo) in Kolsky District of Murmansk Oblast, Russia, located on the Barents Sea coast, at the mouth of the river Teriberka.
+                <a target="_blank" href="https://en.wikipedia.org/wiki/Teriberka">More..</a>
+            </li>
+        </ol>  
+    </div>
 </body>
 </html>
