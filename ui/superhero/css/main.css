@@ -1,29 +1,28 @@
 @import url('https://fonts.googleapis.com/css2?family=Bangers&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,400;1,100&display=swap');
 
-
 html, body {
     width: 100%;
     height: 100%;
     margin: 0;
     padding: 0;
+    scroll-behavior: smooth;
 }
-
-.wrap, 
-.page {
-    height: 100%;
-}
-
 
 body {
     background-color: #f9f9f9;
-}
-
-.page {
     color: #000;
     font-family: sans-serif;
     font-size: 18px;
     line-height: 1.6;
+}
+
+a {
+    color: #0d4981;
+}
+
+a:hover {
+   opacity: 0.8;
 }
 
 .container {
@@ -48,7 +47,6 @@ body {
         "footer footer";
     }
 }
-
 
 @media (max-width: 767px) {
     .container{
@@ -102,8 +100,6 @@ body {
     color: #ffffff;
     text-decoration: none;
     line-height: 1;
-    display: block;
-    font-family: 'Raleway', sans-serif;
     display: flex;
     align-items: center;
     position: absolute;
@@ -158,7 +154,6 @@ body {
     margin: 0;
     padding: 0;
 }
-
 
 .header__img-box {
     display: flex;
@@ -219,35 +214,6 @@ body {
     background: #4095cd;
 }
 
-
-.fp-content {
-    position: absolute;
-    height: 70px;
-    padding: 5px 20px;
-    bottom: 30px;
-    right: 520px;
-    left: 30px;
-    overflow: hidden;
-}
-
-.fp-content a, .fp-content p {
-    color: #fff;
-}
-
-.fp-content p {
-    padding-bottom: 10px;
-    margin: 0px;
-}
-
-.fp-content-fon, .fp-content {
-
-    left: 0;
-    right: 0;
-    top: 285px;
-    text-align: left;
-    font-size: 13px;
-}
-
 .content {
     grid-area: content;
     background-color: #fff;
@@ -268,11 +234,6 @@ body {
 
 .content p:first-child {
     margin-top: 0;
-}
-
-.content a {
-    color: #2d98de;
-    text-decoration: none;
 }
 
 .content a:hover {
@@ -313,50 +274,6 @@ body {
 
 .content__list li {
     margin: 10px;
-}
-
-.simple-table {
-    border-collapse: collapse;
-    width: 300px;
-    margin: 15px 0;
-}
-
-.simple-table td, .simple-table th {
-    border: 1px solid #dddddd;
-    text-align: left;
-    padding: 8px;
-}
-
-.temperature {
-    margin: 15px 0;
-}
-
-.temperature table {
-    border: 1px solid #2d98de;
-    border-collapse: collapse;
-}
-
-.temperature td, .temperature th {
-    border: 1px solid #2d98de;
-    text-align: left;
-    padding: 8px;
-}
-
-.temperature th {
-    background-color: #2d98de;
-    color: #fff;
-    font-weight: normal;
-    font-size: 14px;
-}
-
-.temperature__warm {
-    background-color: #ff5300;
-    color: #fff;
-}
-
-.temperature__cold {
-    background-color: #2d98de;
-    color: #fff;
 }
 
 .sidebar {
@@ -402,27 +319,8 @@ body {
     line-height: 1;
 }
 
-
 .widget__content {
     margin-top: 0px;
-}
-
-.popular {
-    display: flex;
-    margin-top: 20px;
-}
-
-.popular__img-box {
-    padding: 2px;
-    margin-right: 10px;
-    margin-top: 0px;
-    border: 1px solid #c6c6c6;
-}
-
-
-.popular__img {
-    display: block;
-    width: 80px;
 }
 
 .footer {
