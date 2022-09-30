@@ -323,6 +323,11 @@ a:hover {
     margin-top: 0px;
 }
 
+
+.widget_nav a {
+    display: block;
+}
+
 .footer {
     grid-area: footer;
     background: #0d4981;
