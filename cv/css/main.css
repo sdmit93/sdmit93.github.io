@@ -10,3 +10,13 @@ body {
     line-height: 1.6;
 }
 
+.page {
+    width: 900px;
+    margin: 0 auto;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 300px 1fr;
+}
+
