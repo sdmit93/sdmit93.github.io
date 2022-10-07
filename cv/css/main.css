@@ -22,8 +22,12 @@ body {
 
 .grid__left,
 .grid__right {
-    padding: 0 10px;
+    padding: 0 20px;
 }
 
+
+.grid__left {
+    border-right: 1px solid #000;
+}
 
 
