@@ -1,9 +1,22 @@
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    font-family: sans-serif;
+}
+
+
+.page {
+    margin: 0 auto;
+    width: 600px;
+}
+
+
 .content,
 .header,
 .footer {
-    width: 500px;
     padding: 50px;
-    margin: 50px;
+    margin: 25px;
     border-radius: 10px;
     box-sizing: border-box;
 }
