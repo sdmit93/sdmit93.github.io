@@ -1,0 +1,25 @@
+.content,
+.header,
+.footer {
+    padding: 50px;
+    margin: 50px;
+    border-radius: 10px;
+}
+
+.content {
+    border: 5px solid #068103;
+    background-color: #ccc;
+}
+
+
+.header {
+    border: 5px solid #999;
+}
+
+.header__title {
+    text-align: center;
+}
+
+.footer {
+    border: 5px solid #999;
+}
