@@ -1,10 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,400;1,100&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,400;1,300;1,400&display=swap');
 
-html, body, .page {
-    height: 100%;
-}
-
 body {
     width: 100%;
     height: 100%;
@@ -18,11 +14,11 @@ body {
 }
 
 .page {
-    width: 900px;
+    max-width: 900px;
     background: #fff;
     margin: 0 auto;
-    overflow: auto;
     box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    margin-bottom: 15px;
 }
 
 a {
@@ -37,13 +33,14 @@ a:hover {
 .header {
     min-height: 150px;
     background-color: #f4f4f4;
-    margin: 25px 0 40px 0;
+    border-top: 2px solid #348bbf;
+    margin-bottom: 35px;
     position: relative;
 }
 
 .header__picture {
-    width: 160px;
-    height: 160px;
+    width: 155px;
+    height: 155px;
     border-radius: 50%;
     display: block;
     position: absolute;
@@ -69,6 +66,10 @@ a:hover {
     display: inline-block;
 }
 
+.personal-info__name {
+    color: #348bbf;
+}
+
 .personal-info__last-name {
     font-weight: 600;
     margin-left: 5px;
@@ -88,10 +89,9 @@ a:hover {
     display: grid;
     grid-template-columns: 350px 1fr;
     grid-template-rows: auto auto;
-    grid-template-areas:
-        "content-l content-r"
+    grid-template-areas:"content-l content-r";
+    padding-bottom: 15px;
 }
-
 
 .content__left,
 .content__right {
@@ -99,12 +99,12 @@ a:hover {
 }
 
 .content__left {
-    grid-area: 'content-l';
+    grid-area: content-l;
     border-right: 1px solid #000;
 }
 
 .content__right {
-    grid-area: 'content-r';
+    grid-area: content-r;
 }
 
 .box {
@@ -118,12 +118,13 @@ a:hover {
     color: #464a4e;
 }
 
-.box__title {
+.box__title,
+.box__s-title {
     font-family: 'Lato', sans-serif;
 }
 
 .box__s-title {
-    font-size: 16px;
+    font-size: 15px;
 }
 
 .contacts,
@@ -133,5 +134,65 @@ a:hover {
 
 .contacts,
 .skills {
+    border-bottom: 1px solid #000;
 }
 
+.contacts .box {
+    margin-top: 0;
+}
+
+@media (max-width: 767px) {
+
+    .header {
+        margin-bottom: 10px;
+    }
+
+    .content {
+        grid-template-areas:
+        "content-l content-l"
+        "content-r content-r";
+    }
+
+    .personal-info__last-name {
+        display: block;
+        margin: 0;
+    }
+
+    .personal-info__name-wrap {
+        font-size: 40px;
+    }
+
+    .personal-info__proffession {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 520px) {
+    .personal-info__name-wrap {
+        font-size: 30px;
+    }
+
+    .personal-info {
+        padding: 15px;
+    }
+
+    .header__picture {
+        width: 125px;
+        height: 125px;
+        right: 15px;
+    }
+
+    .personal-info__proffession {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 350px) { 
+    .header {
+        text-align: center;
+    }
+
+    .header__picture {
+        display: none;
+    }
+}
